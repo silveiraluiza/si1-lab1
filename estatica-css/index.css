@@ -1,0 +1,21 @@
+body {
+font-family: "Arial", "Helvetica", sans-serif;
+}
+p {
+text-align: justify;
+}
+h1{
+	color: #291690;
+	text-align: center;
+}
+h2{
+	color: #291690;
+	text-align: justify;
+	border-bottom: 1px solid #49B5C2;
+}
+li{
+	text-align: justify;
+}
+figure{
+	text-align: center;
+}
