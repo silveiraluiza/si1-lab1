@@ -11,6 +11,9 @@
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="css/styles.css" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+		</script>
+		<script src="js/my_jquery_functions.js"></script>
 	</head>
 	<body>
  
@@ -18,7 +21,7 @@
   <div class="container">
      <img src="img/ufcg.jpg" width="51px" height="46px" align="left" Hspace="10px" alt="UFCG">
     <a class="navbar-brand" href="#">Sistemas de Informação I</a>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav" id="lista-nav">
       <li class="active"><a href="#">Home</a></li>
       <li class="active"><a href="cadastrar.html">Cadastrar</a></li>
     </ul>
@@ -36,22 +39,22 @@
     <div class="col-lg-6">
       <h3>Gostaria de aprender: </h3>
  			<div class="form-group">
-              <input type="text" class="form-control input-lg" placeholder="">
+              <input type="text" id="aprender" class="form-control input-lg" placeholder="">
             </div>
-            <p><a class="btn btn-large btn-success" target="ext">Submeter</a></p>
-      <ul>
+            <p><a class="btn btn-large btn-success" id="submeter1" target="ext">Submeter</a></p>
+      <ul id="lista-aprender">
           <li>
-          Descrever os objetivos do projeto de software e seu papel no desenvolvimento de um software </li>
+          Descrever os objetivos do projeto de software e seu papel no desenvolvimento de um software </li> 
       </ul>
     </div>
     
     <div class="col-lg-6">
       <h3>Já aprendi:</h3>
       	<div class="form-group">
-              <input type="text" class="form-control input-lg" placeholder="">
+              <input type="text" id="aprendi" class="form-control input-lg" placeholder="">
         </div>
-        <p><a class="btn btn-large btn-success" target="ext">Submeter</a></p>
-        <ul>
+        <p><a class="btn btn-large btn-success" id="submeter2" target="ext">Submeter</a></p>
+        <ul id="lista-aprendi">
           <li>Definir o que são padrões de projeto e nomear um conjunto de padrões</li>
         </ul>
     </div>
@@ -69,4 +72,5 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
+
 </html>
