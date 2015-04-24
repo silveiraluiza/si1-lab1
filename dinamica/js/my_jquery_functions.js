@@ -5,7 +5,7 @@ $(document).ready(function(){
         if (assunto != "" ){
              $("#lista-aprender").append("<div><font size='5'><li><p>"+assunto+
                 "</p></li></font>"+'<button id="ex" class="btn btn-small btn-danger">Remover</button>'+
-                "    "+'<button id="mov" class="btn btn-small btn-warning">Mover!</button>'+"</div>");
+                "    "+'<button id="mov" class="btn btn-small btn-success">Mover</button>'+"</div>");
         }
     });
     $("#submeter2").click(function(){
@@ -14,14 +14,14 @@ $(document).ready(function(){
         if (assunto1 != ""){
              $("#lista-aprendi").append("<div><font size='5'><li>"+assunto1+
                 "</li></font>"+'<button id="ex" class="btn btn-small btn-danger">Remover</button>'+
-                "    "+'<button id="mov1" class="btn btn-small btn-warning">Mover!</button>'+"</div>");
+                "    "+'<button id="mov1" class="btn btn-small btn-success">Mover</button>'+"</div>");
         }
     });
      $(document).on("click", "#mov", function(){
       var temp =$(this).parent().text();
       $("#lista-aprendi").append("<div><font size='5'><li><p>"+temp+
                 "</p></li></font>"+'<button id="ex" class="btn btn-small btn-danger">Remover</button>'+
-                "    "+'<button id="mov" class="btn btn-small btn-warning">Mover!</button>'+"</div>");
+                "    "+'<button id="mov" class="btn btn-small btn-success">Mover</button>'+"</div>");
       $(this).parent().remove();
 
      });
@@ -33,7 +33,7 @@ $(document).ready(function(){
       var temp =$(this).parent().text();
       $("#lista-aprender").append("<div><font size='5'><li><p>"+temp+
                 "</p></li></font>"+'<button id="ex" class="btn btn-small btn-danger">Remover</button>'+
-                "    "+'<button id="mov" class="btn btn-small btn-warning">Mover!</button>'+"</div>");
+                "    "+'<button id="mov" class="btn btn-small btn-success">Mover</button>'+"</div>");
       $(this).parent().remove();
   });
  });
