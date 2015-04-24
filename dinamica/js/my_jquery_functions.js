@@ -18,8 +18,9 @@ $(document).ready(function(){
         }
     });
      $(document).on("click", "#mov", function(){
-      var temp =$(this).parent().text();
-      $("#lista-aprendi").append("<div><font size='5'><li><p>"+temp+
+      var temp =$(this).parent();
+      var texto = temp.find("li").text();
+      $("#lista-aprendi").append("<div><font size='5'><li><p>"+texto+
                 "</p></li></font>"+'<button id="ex" class="btn btn-small btn-danger">Remover</button>'+
                 "    "+'<button id="mov" class="btn btn-small btn-success">Mover</button>'+"</div>");
       $(this).parent().remove();
@@ -30,8 +31,9 @@ $(document).ready(function(){
             $(this).remove();
         });
     $(document).on("click", "#mov1", function(){
-      var temp =$(this).parent().text();
-      $("#lista-aprender").append("<div><font size='5'><li><p>"+temp+
+      var temp =$(this).parent();
+      var texto = temp.find("li").text();
+      $("#lista-aprender").append("<div><font size='5'><li><p>"+texto+
                 "</p></li></font>"+'<button id="ex" class="btn btn-small btn-danger">Remover</button>'+
                 "    "+'<button id="mov" class="btn btn-small btn-success">Mover</button>'+"</div>");
       $(this).parent().remove();
