@@ -22,7 +22,7 @@ $(document).ready(function(){
       var texto = temp.find("li").text();
       $("#lista-aprendi").append("<div><font size='5'><li><p>"+texto+
                 "</p></li></font>"+'<button id="ex" class="btn btn-small btn-danger">Remover</button>'+
-                "    "+'<button id="mov" class="btn btn-small btn-success">Mover</button>'+"</div>");
+                "    "+'<button id="mov1" class="btn btn-small btn-success">Mover</button>'+"</div>");
       $(this).parent().remove();
 
      });
